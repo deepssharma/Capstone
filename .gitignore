@@ -1,0 +1,7 @@
+Untitled.ipynb
+Stocks_analysis_v1.ipynb
+Stocks_analysis_v2.ipynb
+*.ipynb_checkpoints
+*.pytest_cache
+*.pyc
+*__pycache__

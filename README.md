@@ -78,3 +78,21 @@ Using Shapre Ratio and Portfolio Voltality, this analysis yields the following t
 * Include the sentienet analysis which includes web-scrapping for news that affect stocks market.
 * Also implement the information from SEC reports submitted by companies.
 
+## Repository Structure
+ ------
+    ├── figures                             Images folder, containing all referenced image files
+    ├── plots*                              Images folder, that contains model fits for all the stocks
+    ├── models*                             Folder, that contains model fits parameters for all the stocks
+    ├── .gitignore                          List of files and folders not to be uploaded into repo
+    ├── Stocks_Analysis.ipynb               Main Jupyter notebook, contains analysis
+    ├── EDA.ipynb                           Jupyter notebook,that contains exploratory analysis
+    ├── Notebook.pdf                        PDF version of main Jupyter notebook
+    ├── presentation.pdf                    PDF Version of project presentation                                        
+    └── README.md                           The top-level README
+    
+## Contact Info:
+-----
+* Email: deeps.sharma@gmail.com
+* GitHub: [@deepssharma](https://github.com/deepssharma)
+* [LinkedIn](https://www.linkedin.com/in/deepali-sharma-a83a126/) 
+

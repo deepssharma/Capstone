@@ -28,7 +28,7 @@ The data was obtained from Yahoo Stock Finance using the python inbuilt library 
     * Volume: Number of shares traded 
 * Checked for stationarity in the time series by looking at auto-correlations, qq-plots, and adfuller test with and without transformation techniques (this is important to know if one builds ARIMA/GARCH models)
 * Added several **Financial Indicators** to the data by using the python Librray **Finta**. Details can be found at: (https://pypi.org/project/finta/)
-* The data was split into train, test and validation datasets. Since this is a time-series data, we can not shuffle data randomly. We used Keras TimeSeries Generator to build the data samples that preserve the time-order inforamtion
+* The data was split into train, test and validation datasets. Since this is a time-series data, we can not shuffle data randomly. We used Keras TimeSeries Generator to build the data samples that preserve the time-order information
 ## Stocks Prediction using LSTM Model
 ---------------------------
 (https://github.com/MohammadFneish7/Keras_LSTM_Diagram)
@@ -38,3 +38,43 @@ The data was obtained from Yahoo Stock Finance using the python inbuilt library 
 
 * LSTM has logic gates (input, output and forget gates) which give inherent ability for it to retain information that is more relevant and forgo unnecessary information. This makes LSTM a good model for interpreting patterns over long periods.
 * The important thing to note about LSTM is the input, which needs to be in the form of a 3D vector (samples, time-steps, features). Hence, the input has to be reshaped to fit this.
+## Risk-Adjusted Returns: (Shapre Ratio and Volatility)
+------------------------------
+The **Sharpe ratio**—also known as the modified Sharpe ratio or the Sharpe index—is a way to measure the performance of an investment by taking risk into account. 
+The Sharpe Ratio is calculated by determining an asset or a portfolio’s “excess return” for a given period of time. This amount is divided by the portfolio’s standard deviation, which is a measure of its volatility. To calculate the Sharpe Ratio, use this formula:
+  * Sharpe Ratio = (Rp – Rf) / Standard deviation where:
+    * **Rp**: return of portfolio/mean return,
+    * **Rf**: risk-free rate of 3.7% ie current risk free rate of US market,
+    * **Standard Deviation**: standard deviation of the portfolio’s excess return,
+
+Sharpe ratio **> 1** is considered **good**,**> 2** is considered **very good**, and **> 3** is considered **excellent**
+### An Example of Model fitted to GOOGLE stocks Data and Prediction
+<p float="left">
+  <img src="https://github.com/deepssharma/Capstone/blob/master/plots/GOOG.png" width="500px" height="300px" />
+  <img src="https://github.com/deepssharma/Capstone/blob/master/figures/future_GOOG.png" width="500px" height="300px" /> 
+</p>
+
+## Top 3 Portfolios:
+--------------------------------------
+Below one can see all the stocks that can be paired to each other using Shapre Ratio as the measure of profit
+### Pairable Stocks Based on Shapre Ratio
+
+<img src="https://github.com/deepssharma/Capstone/blob/master/figures/pairable_stocks.png" alt="pairable stocks" class="bg-primary" width="800px" height="400px">
+
+Using Shapre Ratio and Portfolio Voltality, this analysis yields the following three best portfolios:
+<img src="https://github.com/deepssharma/Capstone/blob/master/figures/top3_portfolios.png">
+
+## Conclusions
+---------------------------
+* We have built a basic framework that:
+    * fits LSTM models on all the stocks that are included in study.
+    * builds Returns for each individual stocks.
+    * predicts combinations of stocks to build profitable portfolios based on Shapre Ratio and Voltality.
+## Future Improvements
+---------------------------
+* Check other models such as GARCH, Random Forests etc to get prediction for stocks movement.
+* Hyperparameter tuning of Models.
+* Explore the models by including few variables versus all the variables that are included in this study.
+* Include the sentienet analysis which includes web-scrapping for news that affect stocks market.
+* Also implement the information from SEC reports submitted by companies.
+

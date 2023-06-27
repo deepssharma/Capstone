@@ -38,6 +38,12 @@ The data was obtained from Yahoo Stock Finance using the python inbuilt library 
 
 * LSTM has logic gates (input, output and forget gates) which give inherent ability for it to retain information that is more relevant and forgo unnecessary information. This makes LSTM a good model for interpreting patterns over long periods.
 * The important thing to note about LSTM is the input, which needs to be in the form of a 3D vector (samples, time-steps, features). Hence, the input has to be reshaped to fit this.
+### An Example of Model fitted to GOOGLE stocks Data and Prediction
+<p float="left">
+  <img src="https://github.com/deepssharma/Capstone/blob/master/plots/GOOG.png" width="500px" height="300px" />
+  <img src="https://github.com/deepssharma/Capstone/blob/master/figures/future_GOOG.png" width="500px" height="300px" /> 
+</p>
+* Model fits to rest of the stocks can be found under plots sub-directory.
 ## Risk-Adjusted Returns: (Shapre Ratio and Volatility)
 ------------------------------
 The **Sharpe ratio**—also known as the modified Sharpe ratio or the Sharpe index—is a way to measure the performance of an investment by taking risk into account. 
@@ -48,17 +54,12 @@ The Sharpe Ratio is calculated by determining an asset or a portfolio’s “exc
     * **Standard Deviation**: standard deviation of the portfolio’s excess return,
 
 Sharpe ratio **> 1** is considered **good**,**> 2** is considered **very good**, and **> 3** is considered **excellent**
-### An Example of Model fitted to GOOGLE stocks Data and Prediction
-<p float="left">
-  <img src="https://github.com/deepssharma/Capstone/blob/master/plots/GOOG.png" width="500px" height="300px" />
-  <img src="https://github.com/deepssharma/Capstone/blob/master/figures/future_GOOG.png" width="500px" height="300px" /> 
-</p>
 
 ## Top 3 Portfolios:
 --------------------------------------
-Below one can see all the stocks that can be paired to each other using Shapre Ratio as the measure of profit
+Below one can see all the stocks that can be paired to each other that have correlation below 0.5 and a covariance smaller than individual thresholds.
 ### Pairable Stocks Based on Shapre Ratio
-
+If a pair of stock meets both Covariance and correlation thresholds then they can be paired together. The plot below shows pairable stocks in blue and unpairable ones in red.
 <img src="https://github.com/deepssharma/Capstone/blob/master/figures/pairable_stocks.png" alt="pairable stocks" class="bg-primary" width="800px" height="400px">
 
 Using Shapre Ratio and Portfolio Voltality, this analysis yields the following three best portfolios:

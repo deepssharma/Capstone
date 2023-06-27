@@ -48,7 +48,9 @@ The data was obtained from Yahoo Stock Finance using the python inbuilt library 
 * Model fits to rest of the stocks can be found under plots sub-directory.
 
 ### Pairable Stocks 
-If a pair of stock meets Covariance and correlation thresholds then they can be paired together. The plot below shows pairable stocks in blue and unpairable ones in red.
+Only those stocks are paired to each other that have correlation below 0.5 and a covariance smaller than their individual values.
+If a pair of stock meets both the Covariance and correlation thresholds then get paired together. The plot below shows pairable stocks in blue and unpairable ones in red.
+
 <img src="https://github.com/deepssharma/Capstone/blob/master/figures/pairable_stocks.png" alt="pairable stocks" class="bg-primary" width="800px" height="400px">
 
 ## Risk-Adjusted Returns: (Sharpe Ratio and Volatility)

@@ -4,7 +4,7 @@
 **We would like to invest some money into stock market and have a portfolio that will maximize returns with as little risk as possible. We therefore want to minimize the risk involved while maximizing the profit.**
 ## Dataset Information
 ---------------------------------
-The data was obtained from Yahoo Stock Finance using the python inbuilt library *yfinance*. We looked at the top 29 companies by weight in the S&P index (https://www.slickcharts.com/sp500), and this study includes modeling those 29 stocks and predicts portfolios with them. The symbols and abbreviations can be found at the above link (https://www.slickcharts.com/sp500).
+The data was obtained from Yahoo Stock Finance using the python inbuilt library *yfinance*. We looked at the top 29 companies by weight in the S&P index (https://www.slickcharts.com/sp500), and this study includes modeling those 29 stocks and predicts portfolios with them. The symbols and abbreviations can be found at the same above mentioned link.
   * The chosen order of symbols in the list is based on their weights in S&P index as described in the same link.
   * We chose a period of 10 years to look at the historical data. Also this period is used so that all the listed companies have data for the selected period.
 ## Analysis Approach

@@ -75,6 +75,7 @@ Using Shapre Ratio and Portfolio Voltality, this analysis yields the following t
     * fits LSTM models on all the stocks that are included in study.
     * builds Returns for each individual stocks.
     * predicts combinations of stocks to build profitable portfolios based on Shapre Ratio and Voltality.
+    * Investing in top portfolio will result a return of 11%, but with somewhat higher volatility (risk).
 ## Future Improvements
 ---------------------------
 * Check other models such as GARCH, Random Forests etc to get prediction for stocks movement.
@@ -90,9 +91,10 @@ Using Shapre Ratio and Portfolio Voltality, this analysis yields the following t
     ├── models*                             Folder, that contains model fits parameters for all the stocks
     ├── .gitignore                          List of files and folders not to be uploaded into repo
     ├── Stocks_Analysis.ipynb               Main Jupyter notebook, contains analysis
+    ├── Stocks_Analysis_print.ipynb         Main Jupyter notebook which contains all the print statements and plots inbuilt
     ├── EDA.ipynb                           Jupyter notebook,that contains exploratory analysis
-    ├── Notebook.pdf                        PDF version of main Jupyter notebook
-    ├── presentation.pdf                    PDF Version of project presentation                                        
+    ├── Stocks_Analysis.pdf                 PDF version of main Jupyter notebook
+    ├── presentation.pdf                    PDF Version of presentationof the project                                       
     └── README.md                           The top-level README
     
 ## Contact Info:

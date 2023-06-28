@@ -66,8 +66,6 @@ Sharpe ratio **> 1** is considered **Good**,**> 2** is considered **Very Good**,
 
 ## Top 3 Portfolios:
 --------------------------------------
-Below one can see all the stocks that can be paired to each other that have correlation below 0.5 and a covariance smaller than individual thresholds.
-
 Using Shapre Ratio and Portfolio Voltality, this analysis yields the following three best portfolios:
 <img src="https://github.com/deepssharma/Capstone/blob/master/figures/top3_portfolios.png">
 

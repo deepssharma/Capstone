@@ -1,7 +1,7 @@
 # Modeling Stock Prices and Portfolios Prediction - Capstone Project
 --------------------------------------------------------------------
 ## Business Problem
-**We would like to invest some money into stock market and have a portfolio that will maximize returns with as little risk as possible. We therefore want to minimize the risk involved while maximizing the profit.**
+**I would like to invest some money into stock market and have a portfolio that will maximize returns with as little risk as possible. I therefore want to minimize the risk involved while maximizing the profit.**
 ## Dataset Information
 ---------------------------------
 The data was obtained from Yahoo Stock Finance using the python inbuilt library *yfinance*. We looked at the top 29 companies by weight in the S&P index (https://www.slickcharts.com/sp500), and this study includes modeling those 29 stocks and predicts portfolios with them. The symbols and abbreviations can be found at the same above mentioned link.
@@ -35,7 +35,7 @@ The data was obtained from Yahoo Stock Finance using the python inbuilt library 
 (https://github.com/MohammadFneish7/Keras_LSTM_Diagram)
 * We will use the **Long Short-Term Memory (LSTM) model**, a common deep learning recurrent neural network (RNN) used in predicting time series data. The diagram credit goes to (https://blog.floydhub.com/long-short-term-memory-from-zero-to-hero-with-pytorch/)
 
-<img src="./lstm_diagram.png" alt="LSTM" class="bg-primary" width="500px" height="400px">
+<img src="./figures/lstm_diagram.png" alt="LSTM" class="bg-primary" width="500px" height="400px">
 
 * LSTM has logic gates (input, output and forget gates) which give inherent ability for it to retain information that is more relevant and forgo unnecessary information. This makes LSTM a good model for interpreting patterns over long periods.
 * The important thing to note about LSTM is the input, which needs to be in the form of a 3D vector (samples, time-steps, features). Hence, the input has to be reshaped to fit this.
@@ -69,6 +69,11 @@ Sharpe ratio **> 1** is considered **Good**,**> 2** is considered **Very Good**,
 Using Shapre Ratio and Portfolio Voltality, this analysis yields the following three best portfolios:
 <img src="https://github.com/deepssharma/Capstone/blob/master/figures/top3_portfolios.png">
 
+## Recommendations:
+-----------------------------------
+* I should invest in 3rd portfolio, since it is **diverse**, has **relatively smaller volatility**, and **better returns** as compared to the other two portfolios.
+
+
 ## Conclusions
 ---------------------------
 * We have built a basic framework that:
@@ -87,12 +92,12 @@ Using Shapre Ratio and Portfolio Voltality, this analysis yields the following t
 ## Repository Structure
  ------
     ├── figures                             Images folder, containing all referenced image files
-    ├── plots*                              Images folder, that contains model fits for all the stocks
-    ├── models*                             Folder, that contains model fits parameters for all the stocks
+    ├── plots                               Images folder, that contains model fits for all the stocks
+    ├── models                              Folder, that contains model fits parameters for all the stocks
+    ├── logs                                Folder, that contains model logs
+    ├── EDA                                 Folder that constains EDA notebooks
     ├── .gitignore                          List of files and folders not to be uploaded into repo
     ├── Stocks_Analysis.ipynb               Main Jupyter notebook, contains analysis
-    ├── Stocks_Analysis_print.ipynb         Main Jupyter notebook which contains all the print statements and plots inbuilt
-    ├── EDA.ipynb                           Jupyter notebook,that contains exploratory analysis
     ├── Stocks_Analysis.pdf                 PDF version of main Jupyter notebook
     ├── presentation.pdf                    PDF Version of presentationof the project                                       
     └── README.md                           The top-level README

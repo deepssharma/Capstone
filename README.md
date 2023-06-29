@@ -95,9 +95,9 @@ Using Shapre Ratio and Portfolio Voltality, this analysis yields the following t
     ├── plots                               Images folder, that contains model fits for all the stocks
     ├── models                              Folder, that contains model fits parameters for all the stocks
     ├── logs                                Folder, that contains model logs
+    ├── EDA                                 Folder that constains EDA notebooks
     ├── .gitignore                          List of files and folders not to be uploaded into repo
     ├── Stocks_Analysis.ipynb               Main Jupyter notebook, contains analysis
-    ├── EDA                                 Folder that constains EDA notebooks
     ├── Stocks_Analysis.pdf                 PDF version of main Jupyter notebook
     ├── presentation.pdf                    PDF Version of presentationof the project                                       
     └── README.md                           The top-level README

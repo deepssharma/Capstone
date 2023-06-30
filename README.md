@@ -15,8 +15,6 @@ The data was obtained from Yahoo Stock Finance using the python inbuilt library 
         * ARIMA/GARCH models: done here only as exploratory analysis and will be included later as  keep improving the code quality.
     * Once we have a reliable model, we will generate predictions and then calculate returns on stocks and eventually build profitable portifolios.
     * We will use **Shapre Ratio** and also check **Volatility** as the measures to predict portfolios.
-* <span style="color:lightblue"> One needs to include sentinet analysis as well to understand the effect of news and other factors on stocks price movement. However, at this point, we have not included it due to lack of time. </span>.
-* <span style="color:lightblue"> Other thing to include is the information contained in the SEC filings of the companies and incorporate that into models.</span>
 ## Data Preparation
 ---------------------------------
 * The data contains "Open", "Close, "Low", "High", "Adjusted Close" and "Volume" entries for each stock. Those values refer to the :
